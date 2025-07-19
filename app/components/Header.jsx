@@ -11,7 +11,7 @@ const Header = () => {
         Dashboard
       </Link>
 
-      <Link href="/posts" className="cursor-pointer hover:underline">
+      <Link href="/posts" prefetch className="cursor-pointer hover:underline">
         Blog Post
       </Link>
     </div>

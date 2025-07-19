@@ -10,6 +10,7 @@ const PostCard = ({ posts, truncateText, getAuthorName }) => {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {posts?.map((post) => (
           <Link
+          prefetch
             key={post.id}
             href={`/post/${post.id}`}
             className="bg-white rounded-2xl shadow p-5 border border-gray-100 hover:shadow-lg transition hover:cursor-pointer block"
