@@ -1,16 +1,19 @@
 "use client";
 import React from "react";
-import { useRouter } from "next/navigation";
-const Header = () => {
-  const router = useRouter();
+import Link from "next/link";
 
+const Header = () => {
   return (
     <div className="flex justify-center gap-4 mt-5 header">
       <div>Logo</div>
 
-      <div onClick={() => router.push("/")}>Dashboard</div>
+      <Link href="/" className="cursor-pointer hover:underline">
+        Dashboard
+      </Link>
 
-      <div onClick={() => router.push("/posts")}>Blog Post</div>
+      <Link href="/posts" className="cursor-pointer hover:underline">
+        Blog Post
+      </Link>
     </div>
   );
 };
